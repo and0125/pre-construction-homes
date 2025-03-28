@@ -53,8 +53,8 @@ function InterestForm() {
     setIsSubmitting(true);
 
     try {
+      // TODO: update code here for logging in Firebase DB 
       console.log(formData);
-      
     } catch (error) {
       console.log(error);
     } finally {
