@@ -1,7 +1,12 @@
 import React from "react";
+import InterestForm from "@/components/interest-form/form";
 
-function InterestForm() {
-  return <div>{/* TODO: create a form component in the components  */}</div>;
+function InterestFormPage() {
+  return (
+    <div>
+      <InterestForm />
+    </div>
+  );
 }
 
-export default InterestForm;
+export default InterestFormPage;
