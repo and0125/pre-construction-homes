@@ -8,5 +8,6 @@
     {"type": "refactor", "section": "Code Refactoring"},
     {"type": "perf", "section": "Performance Improvements"},
     {"type": "test", "hidden": true}
+    {"type": "deps", "hidden": true}
   ]
 }
