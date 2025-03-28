@@ -24,6 +24,3 @@
 
 - [ ] 26 articles for content on newsfeed
 - [ ] pick 2-3 items the user can configure
-- [ ]
-
--
