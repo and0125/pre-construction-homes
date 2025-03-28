@@ -1,5 +1,3 @@
-import Changelog from "./CHANGELOG.md";
-
 # Notes
 
 ## Commands
