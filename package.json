@@ -10,6 +10,9 @@
     "release": "standard-version"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.2.4",
     "@types/mongodb": "^4.0.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
