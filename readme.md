@@ -1,6 +1,11 @@
-import Changelog from "./changelog.md";
+import Changelog from "./CHANGELOG.md";
 
 # Notes
+
+## Commands
+
+- update changelog with: `npm run release`
+- update readme to reflect changelog with: `node update-readme.js`
 
 ## Features to Add (from Software Development Meeting)
 
@@ -27,8 +32,16 @@ import Changelog from "./changelog.md";
 - [ ] 26 articles for content on newsfeed
 - [ ] pick 2-3 items the user can configure
 
----
+## Changelog
 
-# CHANGELOG
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-<Changelog />
+### 0.1.1 (2025-03-28)
+
+### Features
+
+- add Form Component ([#4](https://github.com/and0125/pre-construction-homes/issues/4)) ([7bfed3a](https://github.com/and0125/pre-construction-homes/commit/7bfed3a62e9f640b8b914d723af8ea7a85946acf))
+- changelog ([c40e074](https://github.com/and0125/pre-construction-homes/commit/c40e074988f2304eba1d9ccaff855b2bbcde292a))
+
+[View full changelog](./CHANGELOG.md)
+
