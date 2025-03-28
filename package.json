@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "release": "standard-version",
-    "update-readme": "node update-readme.js"
+    "update-readme": "node update-readme.js",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -30,9 +32,15 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^29.5.14",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "standard-version": "^9.5.0",
     "tailwindcss": "^4",
     "typescript": "^5"
