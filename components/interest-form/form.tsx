@@ -2,6 +2,7 @@
 
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import FormControl from "./FormControl";
+import { HandleSubmit } from "@/lib/interest-form/handle-submit";
 
 type AlertProps = {
   type: "success" | "error" | "";
@@ -48,19 +49,43 @@ function InterestForm() {
     });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      // TODO: update code here for logging in Firebase DB 
-      console.log(formData);
+      // Format data to match the expected structure in HandleSubmit
+      const submissionData = {
+        name: `${formData.firstName} ${formData.lastName}`,
+        email: formData.email,
+        country: formData.country,
+        interests: formData.interests,
+      };
+
+      // Call the HandleSubmit function
+      const result = await HandleSubmit(submissionData);
+
+      // Set alert based on the result
+      setAlert({
+        type: result.success ? "success" : "error",
+        message: result.message,
+      });
+
+      // Only reset form on success
+      if (result.success) {
+        setTimeout(() => {
+          resetForm();
+        }, 5000); // Give user time to see success message
+      } else {
+        setIsSubmitting(false); // Allow resubmission if there was an error
+      }
     } catch (error) {
-      console.log(error);
-    } finally {
-      setTimeout(() => {
-        resetForm();
-      }, 2000);
+      console.error("Form submission error:", error);
+      setAlert({
+        type: "error",
+        message: "An unexpected error occurred. Please try again.",
+      });
+      setIsSubmitting(false);
     }
   };
 
