@@ -50,6 +50,7 @@ function InterestForm() {
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    //TODO: refactor to send a request to the `/interest-form-submission` api endpoint
     e.preventDefault();
     setIsSubmitting(true);
 
