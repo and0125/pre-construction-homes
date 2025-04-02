@@ -5,7 +5,6 @@ export default function NavBar() {
   return (
     <header className="container mx-auto px-4 py-4 flex items-center justify-between">
       <div className="flex items-center gap-2">
-        <div className="w-8 h-8 bg-gray-400 rounded-full"></div>
         <span className="text-lg font-medium text-slate-700">HomeStart</span>
       </div>
       <nav className="hidden md:flex items-center gap-6">
