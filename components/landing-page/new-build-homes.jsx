@@ -12,7 +12,7 @@ export default function NewBuildHomes() {
         <div className="flex gap-4 items-center">
           <div className="relative rounded-xl overflow-hidden h-16 w-24 flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/top-of-building.png"
               alt="Oakville property"
               fill
               className="object-cover"
@@ -29,7 +29,7 @@ export default function NewBuildHomes() {
         <div className="flex gap-4 items-center">
           <div className="relative rounded-xl overflow-hidden h-16 w-24 flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/top-of-building.png"
               alt="Aurora property"
               fill
               className="object-cover"
@@ -46,7 +46,7 @@ export default function NewBuildHomes() {
         <div className="flex gap-4 items-center">
           <div className="relative rounded-xl overflow-hidden h-16 w-24 flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/top-of-building.png"
               alt="Oakville property"
               fill
               className="object-cover"
@@ -63,7 +63,7 @@ export default function NewBuildHomes() {
         <div className="flex gap-4 items-center">
           <div className="relative rounded-xl overflow-hidden h-16 w-24 flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/top-of-building.png"
               alt="Oakville property"
               fill
               className="object-cover"
@@ -80,7 +80,7 @@ export default function NewBuildHomes() {
         <div className="flex gap-4 items-center">
           <div className="relative rounded-xl overflow-hidden h-16 w-24 flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/top-of-building.png"
               alt="Oakville property"
               fill
               className="object-cover"
@@ -97,7 +97,7 @@ export default function NewBuildHomes() {
         <div className="flex gap-4 items-center">
           <div className="relative rounded-xl overflow-hidden h-16 w-24 flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/top-of-building.png"
               alt="Oakville property"
               fill
               className="object-cover"

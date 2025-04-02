@@ -23,9 +23,9 @@ export default function CallToAction() {
           </Link>
         </div>
       </div>
-      <div className="relative rounded-xl overflow-hidden h-64 md:h-auto">
+      <div className="relative rounded-xl overflow-hidden h-[60vh]">
         <Image
-          src="/placeholder.svg?height=400&width=600"
+          src="/main-image-couple.png"
           alt="Young designer in their new home"
           fill
           className="object-cover"

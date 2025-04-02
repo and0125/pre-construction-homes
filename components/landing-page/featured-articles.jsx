@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function FeaturedArticles() {
   return (
-    <div className="grid md:grid-cols-2 gap-8 mb-12">
-      <div className="relative rounded-xl overflow-hidden h-64">
+    <div className="grid md:grid-cols-2 gap-16 mb-12">
+      <div className="relative rounded-xl overflow-hidden h-[40vh]">
         <Image
-          src="/placeholder.svg?height=400&width=600"
+          src="/aparment-building.png"
           alt="New community in Oakville"
           fill
           className="object-cover"
@@ -22,9 +22,9 @@ export default function FeaturedArticles() {
 
       <div className="grid grid-cols-1 gap-4">
         <div className="flex gap-4 items-center">
-          <div className="relative rounded-xl overflow-hidden h-16 w-24 flex-shrink-0">
+          <div className="relative rounded-xl overflow-hidden h-[20vh] w-[20vh] flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/house-with-pool.png"
               alt="Silicon Valley"
               fill
               className="object-cover"
@@ -37,9 +37,9 @@ export default function FeaturedArticles() {
         </div>
 
         <div className="flex gap-4 items-center">
-          <div className="relative rounded-xl overflow-hidden h-16 w-24 flex-shrink-0">
+          <div className="relative rounded-xl overflow-hidden h-[20vh] w-[20vh] flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/professional-smile.png"
               alt="Mortgage advisor"
               fill
               className="object-cover"
@@ -52,9 +52,9 @@ export default function FeaturedArticles() {
         </div>
 
         <div className="flex gap-4 items-center">
-          <div className="relative rounded-xl overflow-hidden h-16 w-24 flex-shrink-0">
+          <div className="relative rounded-xl overflow-hidden h-[20vh] w-[20vh] flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/city-scape.png"
               alt="Vancouver Hills Villa"
               fill
               className="object-cover"
@@ -67,9 +67,9 @@ export default function FeaturedArticles() {
         </div>
 
         <div className="flex gap-4 items-center">
-          <div className="relative rounded-xl overflow-hidden h-16 w-24 flex-shrink-0">
+          <div className="relative rounded-xl overflow-hidden h-[20vh] w-[20vh] flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/mixed-couple.png"
               alt="First time home owners"
               fill
               className="object-cover"

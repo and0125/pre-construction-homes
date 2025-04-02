@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function SuccessStories() {
   return (
     <section className="mb-12">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-16">
         <div className="space-y-2">
-          <div className="relative rounded-xl overflow-hidden h-32">
+          <div className="relative rounded-xl overflow-hidden h-[16vh] w-[16vw]">
             <Image
-              src="/placeholder.svg?height=300&width=300"
+              src="/black-couple-young.png"
               alt="Siblings who bought new-builds"
               fill
               className="object-cover"
@@ -21,9 +21,9 @@ export default function SuccessStories() {
         </div>
 
         <div className="space-y-2">
-          <div className="relative rounded-xl overflow-hidden h-32">
+          <div className="relative rounded-xl overflow-hidden h-[16vh] w-[16vw]">
             <Image
-              src="/placeholder.svg?height=300&width=300"
+              src="/black-couple-young.png"
               alt="Siblings who bought new-builds"
               fill
               className="object-cover"
@@ -36,9 +36,9 @@ export default function SuccessStories() {
         </div>
 
         <div className="space-y-2">
-          <div className="relative rounded-xl overflow-hidden h-32">
+          <div className="relative rounded-xl overflow-hidden h-[16vh] w-[16vw]">
             <Image
-              src="/placeholder.svg?height=300&width=300"
+              src="/black-couple-young.png"
               alt="Siblings who bought new-builds"
               fill
               className="object-cover"
@@ -51,9 +51,9 @@ export default function SuccessStories() {
         </div>
 
         <div className="space-y-2">
-          <div className="relative rounded-xl overflow-hidden h-32">
+          <div className="relative rounded-xl overflow-hidden h-[16vh] w-[16vw]">
             <Image
-              src="/placeholder.svg?height=300&width=300"
+              src="/black-couple-young.png"
               alt="Siblings who bought new-builds"
               fill
               className="object-cover"
