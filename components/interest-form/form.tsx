@@ -64,21 +64,23 @@ function InterestForm() {
       };
 
       // Call the HandleSubmit function
-      const result = await HandleSubmit(submissionData);
-
-      // Set alert based on the result
-      setAlert({
-        type: result.success ? "success" : "error",
-        message: result.message,
+      console.log("sending request to api...");
+      const result = await await fetch("/api/interest-form-submission", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(submissionData),
       });
 
       // Only reset form on success
-      if (result.success) {
+      if (result.ok) {
         setTimeout(() => {
           resetForm();
         }, 5000); // Give user time to see success message
       } else {
         setIsSubmitting(false); // Allow resubmission if there was an error
+        throw new Error("Failed to submit data");
       }
     } catch (error) {
       console.error("Form submission error:", error);
