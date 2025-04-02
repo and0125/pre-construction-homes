@@ -9,23 +9,35 @@ export default function NavBar() {
         <span className="text-lg font-medium text-slate-700">HomeStart</span>
       </div>
       <nav className="hidden md:flex items-center gap-6">
-        <Link href="#" className="text-sm text-slate-700 hover:text-slate-900">
+        <Link href="/" className="text-sm text-slate-700 hover:text-slate-900">
           Home
         </Link>
-        <Link href="#" className="text-sm text-slate-700 hover:text-slate-900">
+        <Link
+          href="/success-stories"
+          className="text-sm text-slate-700 hover:text-slate-900"
+        >
           Success Stories
         </Link>
-        <Link href="#" className="text-sm text-slate-700 hover:text-slate-900">
+        <Link
+          href="/listings"
+          className="text-sm text-slate-700 hover:text-slate-900"
+        >
           Listings
         </Link>
-        <Link href="#" className="text-sm text-slate-700 hover:text-slate-900">
+        <Link
+          href="/contact-form"
+          className="text-sm text-slate-700 hover:text-slate-900"
+        >
           Contact
         </Link>
-        <Link href="#" className="text-sm text-slate-700 hover:text-slate-900">
+        <Link
+          href="/sign-in"
+          className="text-sm text-slate-700 hover:text-slate-900"
+        >
           Sign in
         </Link>
         <Link
-          href="#"
+          href="/interest-form"
           className="text-sm text-white bg-slate-700 px-4 py-2 rounded-full hover:bg-slate-800"
         >
           Subscribe
