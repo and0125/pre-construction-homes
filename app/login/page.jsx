@@ -22,7 +22,7 @@ export default function Login() {
     try {
       const success = await login(email, password);
       if (success) {
-        router.push("/dashboard");
+        router.push("/user-dashboard");
       } else {
         setError("Failed to log in");
       }

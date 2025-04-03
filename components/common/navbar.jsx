@@ -1,7 +1,23 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
+import { useAuth } from "@/contexts/AuthContext";
+import { useRouter } from "next/navigation";
 
 export default function NavBar() {
+  const { user, loading, logout } = useAuth();
+  const router = useRouter();
+
+  const handleLogout = async () => {
+    const success = await logout();
+    if (success) {
+      router.push("/sign-in");
+    }
+  };
+
+  console.log(user);
+
   return (
     <header className="container mx-auto px-4 py-4 flex items-center justify-between">
       <div className="flex items-center gap-2">
@@ -29,18 +45,36 @@ export default function NavBar() {
         >
           Contact
         </Link>
-        <Link
-          href="/sign-in"
-          className="text-sm text-slate-700 hover:text-slate-900"
-        >
-          Sign in
-        </Link>
-        <Link
-          href="/interest-form"
-          className="text-sm text-white bg-slate-700 px-4 py-2 rounded-full hover:bg-slate-800"
-        >
-          Subscribe
-        </Link>
+
+        {!loading && (
+          <>
+            {user ? (
+              // User is logged in - show sign out button with the same styling as the subscribe button
+              <button
+                onClick={handleLogout}
+                className="text-sm text-white bg-slate-700 px-4 py-2 rounded-full hover:bg-slate-800"
+              >
+                Sign out
+              </button>
+            ) : (
+              // User is not logged in - show sign in and subscribe buttons
+              <>
+                <Link
+                  href="/login"
+                  className="text-sm text-slate-700 hover:text-slate-900"
+                >
+                  Sign in
+                </Link>
+                <Link
+                  href="/interest-form"
+                  className="text-sm text-white bg-slate-700 px-4 py-2 rounded-full hover:bg-slate-800"
+                >
+                  Subscribe
+                </Link>
+              </>
+            )}
+          </>
+        )}
       </nav>
       <button className="md:hidden">
         <svg
