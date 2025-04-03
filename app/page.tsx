@@ -1,4 +1,3 @@
-import NavBar from "@/components/common/navbar";
 import CallToAction from "@/components/landing-page/call-to-action";
 import FeaturedArticles from "@/components/landing-page/featured-articles";
 import NewBuildHomes from "@/components/landing-page/new-build-homes";
